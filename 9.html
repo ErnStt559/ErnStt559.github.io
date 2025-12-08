@@ -1,4 +1,5 @@
-<!DOCTYPE html> <html lang="en">
+<!DOCTYPE html>
+ <html lang="en">
 <head>
 <meta content="Universal Blood" property="og:title"/>
 <meta content="Synthetic O-negative blood from stem cells. No donor matching. Ends blood shortages." property="og:description"/>
@@ -11,25 +12,40 @@
 <meta content="How next-generation synthetic blood can suit any person and save lives without matching blood type or Rh factor." name="description"/>
 <link href="style.css" rel="stylesheet"/>
 <!-- OneSignal Push Notifications -->
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script async="" src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
+<script> window.OneSignal = window.OneSignal || []; OneSignal.push(function() { OneSignal.init({ appId: "dd1c388d-b9e8-41b3-b904-e811dbcfae4c", // ← ТВОЙ APP ID serviceWorkerParam: { scope: '/' }, serviceWorkerPath: 'OneSignalSDKWorker.js' }); });
+</script>
+<script async="" src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
 <script>
   window.OneSignal = window.OneSignal || [];
   OneSignal.push(function() {
     OneSignal.init({
-      appId: "dd1c388d-b9e8-41b3-b904-e811dbcfae4c",
+      appId: "dd1c388d-b9e8-41b3-b904-e811dbcfae4c",          
       notifyButton: {
         enable: true,
         position: "bottom-right",
         size: "medium",
         theme: "default",
-        showCredit: false
+        showCredit: false,
+        text: {
+          'tip.state.unsubscribed': 'Subscribe to notifications',
+          'tip.state.subscribed': 'You’re subscribed',
+          'message.action.subscribed': 'Thank you! Notifications enabled',
+          'dialog.main.title': 'Future 2030',
+          'dialog.main.button.subscribe': 'Allow',
+          'dialog.main.button.unsubscribe': 'Unsubscribe'
+        }
       },
       promptOptions: {
-        slidedown: { enabled: false }
+        slidedown: { enabled: false }      // disables the big top slide-down
       }
     });
   });
-</script> </head>
+</script>
+
+
+
+</head>
 <body>
 <header class="article-header">
 <h1>Scientists Created Blood That Can Save Anyone — Regardless of Type</h1>
@@ -37,23 +53,83 @@
 <img alt="A transparent IV bag filled with glowing red synthetic blood, labeled 'Universal O-Negative', being transfused in an emergency setting" src="images/f1.jpg"/>
 </header>
 <article class="content">
-<h2>Coming soon...</h2>
+<p>Imagine: a battlefield medic pulls a <strong>single red pouch</strong> from their kit. No blood typing. No cross-matching. No waiting for a donor. They hook it to the IV — and <strong>it works on anyone</strong>.</p>
+<p>This isn’t science fiction. This is <strong>2025</strong>. And <strong>universal synthetic blood</strong> is here.</p>
+<h2>Why This Is a Problem at All</h2>
+<p>Every minute, <strong>someone dies</strong> because the right blood type isn’t available. There are <strong>8 major blood groups</strong> (A, B, AB, O) and <strong>Rh factors</strong> (+/-). A mismatch triggers <strong>hemolytic crisis</strong> — red cells burst, kidneys fail, death follows in hours.</p>
+<p>In war zones, remote villages, or mass casualties — <strong>blood banks don’t exist</strong>. You have <strong>30 minutes</strong> before irreversible shock.</p>
+<h2>What Artificial Blood Actually Is</h2>
+<p>It’s not “fake blood.” It’s <strong>engineered oxygen carriers</strong> — microscopic capsules that <em>do the job of red blood cells</em>:</p>
+<ul>
+<li><strong>Hemoglobin-based</strong>: Pure human hemoglobin extracted and purified;</li>
+<li><strong>Encapsulated in lipid-polymer shells</strong>: Mimics cell membrane, prevents immune attack;</li>
+<li><strong>Size: ~150 nm</strong>: Small enough to flow through capillaries, large enough to avoid kidney filtration.</li>
+</ul>
+<p>Think of it as <strong>nano-red-blood-cells</strong> — smarter, safer, and <strong>universal</strong>.</p>
+<iframe 
+  src="adloader.html" 
+  style="border:0; width:100%; /* или нужный размер */" 
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+<h2>Real Experiments — Real Lives Saved</h2>
+<ul>
+<li>
+<strong>🇯🇵 Artificial O₂ (Hemoglobin Vesicles)</strong> — National Defense Medical College<br/> 2024 animal trials: <strong>100% survival</strong> in hemorrhagic shock (vs. 0% untreated). Works across species — dog, pig, monkey. Human Phase I starts <strong>2026</strong>. </li>
+<li>
+<strong>🇺🇸 ErythroMer (University of Maryland)</strong><br/>
+<strong>Powdered blood</strong> — freeze-dried, shelf-stable for <strong>3+ years</strong> at room temp. Reconstitute with saline in <strong>30 seconds</strong>. 2025: FDA fast-track for trauma use. </li>
+<li>
+<strong>🇬🇧 HemoPure (HbO2 Therapeutics)</strong><br/> Bovine hemoglobin-based, already used in <strong>South Africa</strong> for Jehovah’s Witnesses (no human blood). <strong>Zero transfusion reactions</strong> in 1,000+ patients. </li>
+</ul>
+<blockquote> “One bag can save anyone, anywhere — no typing, no waiting, no waste.” <cite>— Dr. Hiromi Sakai, lead researcher, Artificial O₂ project</cite>
+</blockquote>
+<h2>Advantages Over Real Blood</h2>
+<ul>
+<li>Universal compatibility — <strong>no ABO, no Rh issues</strong>;</li>
+<li>Stores at <strong>room temperature for years</strong> — no refrigeration;</li>
+<li><strong>Sterile by design</strong> — zero risk of HIV, hepatitis, prions;</li>
+<li><strong>Scalable</strong> — produced in bioreactors, not donated;</li>
+<li><strong>Customizable</strong> — add clotting factors, antibiotics, or cancer drugs.</li>
+</ul>
+<img alt="" src="images/8.jpg"/><h2>But There Are Risks — Science Is Honest</h2>
+<ul>
+<li><strong>Short half-life</strong>: 12–24 hours (vs. 120 days for real RBCs) — bridge, not replacement;</li>
+<li><strong>Methemoglobin formation</strong>: Can reduce oxygen delivery if &gt;5% — solved with antioxidants;</li>
+<li><strong>Vasoconstriction</strong>: Early versions caused blood pressure spikes — fixed with nitric oxide coatings.</li>
+</ul>
+<p>Current verdict: <strong>safe for emergency use</strong>. Full replacement? Not yet — but <strong>getting closer</strong>.</p>
+<h2>What’s Next</h2>
+<ul>
+<li><strong>2026</strong>: First human trauma trials (Japan, U.S. military);</li>
+<li><strong>2028</strong>: Standard issue in <strong>ambulances and combat medics</strong>;</li>
+<li><strong>2030</strong>: <strong>Portable blood pods</strong> — every police car, school, home;</li>
+<li><strong>2035</strong>: <strong>Self-replicating blood</strong> — engineered stem cells that grow inside the body.</li>
+</ul>
+<p>One day, <strong>blood shortages will be history</strong>. And every human — regardless of type — will have a fighting chance.</p>
+<blockquote> “We are creating a reserve of life — for moments when every second counts.” <cite>— Dr. Allan Doctor, ErythroMer Project, Washington University</cite>
+</blockquote>
+<hr/>
 <div class="next-article">
 <h2>Next articles</h2>
 <ul>
-<li><a href="10.html">Smart Pills: Medicines That Think for Themselves (Coming soon)</a></li>
+<li><a href="10.html">Smart Pills: Medicines That Think for Themselves</a></li>
 <li><a href="7.html">Bionic Eye: How People Are Beginning to See Again</a></li>
 <li><a href="6.html">“Liquid Human”: How Doctors Learned to Freeze People to Save Their Lives</a></li>
 <li><a href="5.html">Sleep Chip: How Scientists Learned to Control Dreams</a></li>
 <li><a href="4.html">Neurochip That Reads Thoughts</a></li>
-<li><a href="8.html">Viruses Against Cancer: How Scientists Made Microbes Kill Tumors (Coming soon)</a></li>
+<li><a href="8.html">Viruses Against Cancer: How Scientists Made Microbes Kill Tumors</a></li>
 <li><a href="3.html">Artificial Skin That Can Feel Touch</a></li>
 <li><a href="2.html">Bacteria That Eat Plastic: Will Microbes Save the Planet?</a></li>
 </ul>
 </div>
-</article> <script async="async" data-cfasync="false" src="//pl27963251.effectivegatecpm.com/d8d8eec4dc7bb622f5fcff62b3c09bbd/invoke.js"></script>
-<div id="container-d8d8eec4dc7bb622f5fcff62b3c09bbd"></div>
+</article> 
+  <iframe 
+  src="adloader.html"
+  style="width:100%; min-height:300px; border:0;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
 <footer class="footer">
 <p>© 2025 — Innovations in Medicine and Technology</p>
-</footer> </body>
+</footer> <div style="background:#1a1a3d;padding:1.5rem;border-radius:0.8rem;margin:2rem 0;border:1px solid #00d4aa;text-align:center;"> <p style="margin:0;color:#c0ffeb;font-size:0.9rem;"> <strong>Stay Updated:</strong><br/> <a href="rss.xml" style="color:#00d4aa;" target="_blank">RSS Feed</a> (auto-updates)<br/> <span style="color:#aaa;">Push Alerts — enable in browser</span> </p>
+</div> </body>
 </html>
